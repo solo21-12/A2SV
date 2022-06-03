@@ -7,11 +7,9 @@ var fizzBuzz = function (n) {
         }
         else if (num % 3 == 0) {
             answer[i] = "Fizz";
-
         }
         else if (num % 5 == 0) {
             answer[i] = "Buzz";
-
         }
         else {
             answer[i] = num.toString();
