@@ -1,5 +1,6 @@
+//Written By Dawit Solo21-12
 var sortSentence = function (s) {
-    let arr = [], o, arr2;
+    let arr = [], o;
     let n = 0;
     let t = s.replace(/ /g, "");
     for (i = 0; i < t.length; i++) {
@@ -18,7 +19,6 @@ var sortSentence = function (s) {
             }
         }
     }
-    arr2 = arr.join(" ");
-    return arr2.trim();
-}
-console.log(sortSentence("Myself2 Me1 I4 and3"));
+
+    return arr.join(" ");
+};
