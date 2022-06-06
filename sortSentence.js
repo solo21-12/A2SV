@@ -9,16 +9,12 @@ var sortSentence = function (s) {
         }
         else {
             n = parseInt(t.charAt(i));
-            if (isNaN(n)) {
-                continue;
-            }
-            else {
-                o = s.indexOf(n);
-                arr[n - 1] = s.slice(0, o);
-                s = s.slice(o + 2);
-            }
+            o = s.indexOf(n);
+            arr[n - 1] = s.slice(0, o);
+            s = s.slice(o + 2);
         }
     }
 
     return arr.join(" ");
 };
+console.log(sortSentence("Myself2 Me1 I4 and3"));
